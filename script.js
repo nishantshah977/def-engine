@@ -16,7 +16,6 @@ else{
 .then(function(data){
     const { definition } = data[0].meanings[0].definitions[0];
     def1(definition);    
-    def2();
     /* Show Definition*/
     
     document.querySelector("#ans").style.display="block";
@@ -28,18 +27,4 @@ else{
 function def1(definition){
 document.getElementById('first').innerText = definition; 
 
-}
-
-
-
-
-function def2(word){
-fetch('https://api.dictionaryapi.dev/api/v2/entries/en/'+word)
-.then((response) =>{
-    return response.json();
-})
-.then((data) =>{
-    const { definition } = data[0].meanings[0].definitions[1];
-    document.getElementById('second').innerText = definition; 
-});
 }

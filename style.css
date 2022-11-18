@@ -2,6 +2,8 @@
 *{
     margin:0;
     font-family:poppins;
+  box-sizing: border-box;
+
 }
 nav{
     background-color:black;
@@ -43,4 +45,33 @@ button{
 }
 p{
 margin-left:15px;
+}
+#modal{
+    background-color:black;
+    content-align:center;
+    text-align:center;
+    color:white;
+     position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display:none;
+  overflow: auto;
+}
+#modalContent{
+    margin:50px;
+}
+
+.btn-red{
+    background-color:#f54242;
+    border:none;
+    height:50px;
+    width:auto;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:18px;
+    color:white;
+    margin:30px;
 }

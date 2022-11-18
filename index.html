@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Def Engine</title>
     <link href="style.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     
@@ -33,25 +32,40 @@
     <br>
     
     
+    <!-- Error Show -->
+    <div id="modal">
+        <div id="modalContent">
+        <h1>Oops..</h1>
+        <h2>No Word Found</h2>
+        <br>
+        <br>
+        <strong>This error is caused when you</strong>
+        <br>
+        <br>
+        <ol>
+        <li>Enter Wrong Word</li>
+        or
+        <li>Word is not listed on server</li>
+        </ol>
+        
+        
+         <button class="btn-red">Close</button>
+        </div>
+    </div>
+    
     
     <div id="ans">
     <fieldset>
-        <h2 align="center">Word</h2>
-        
-        
-        
+        <h2 align="center" id="word"></h2>   
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7IS8A9oxpna3qJ0BQLYweinNXPWZYKtdrA&usqp=CAU" height="50px" width="50px" onclick="play()">
+        <audio id="audio" src=""></audio>
         <fieldset>
             <span id="first"></span>
             <legend>Defintion</legend>
         </fieldset>
- 
         <br>
-        
-      
+          
     </fieldset>
-<br>
-<br><br>
-<br>
     </div>
     
     <p align="left">
@@ -61,7 +75,6 @@
 <p align="left">
     Everyone is free to contribute. <a href="https://github.com/nishantshah977/def-engine">Contribute Here</a>
 </p>
-    
     
     
     <script src="script.js"></script>
